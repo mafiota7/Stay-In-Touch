@@ -10,8 +10,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
-
-import com.example.panche.rssreader.R;
+import com.example.zhivko.stayintouch.R;
 
 
 public class SearchDialogFragment extends DialogFragment {

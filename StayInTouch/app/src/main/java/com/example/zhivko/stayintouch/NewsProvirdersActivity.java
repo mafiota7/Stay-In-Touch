@@ -24,6 +24,7 @@ import com.example.zhivko.stayintouch.controlers.VerticalSpace;
 import com.example.zhivko.stayintouch.fragments.NoNewsToShowFragment;
 import com.example.zhivko.stayintouch.fragments.SearchDialogFragment;
 import com.example.zhivko.stayintouch.model.News;
+import com.example.zhivko.stayintouch.sqlLite.DBNewsDAO;
 
 import java.util.ArrayList;
 
@@ -42,7 +43,7 @@ public class NewsProvirdersActivity extends AppCompatActivity
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_news_provirders);
+        setContentView(R.layout.activity_news_providers);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
@@ -104,7 +105,7 @@ public class NewsProvirdersActivity extends AppCompatActivity
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.news_providers, menu);
+        getMenuInflater().inflate(R.menu.news_provirders, menu);
         return true;
     }
 
@@ -300,7 +301,7 @@ public class NewsProvirdersActivity extends AppCompatActivity
                 disable search in my favorite news category
                  */
                 if(getSupportActionBar().getTitle().toString().equals(MY_FAVORITE_NEWS)) {
-                    Toast.makeText(NewsProviders.this, "YOU ARE NOT ABLE TO SEARCH IN THIS CATEGORY", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(NewsProvirdersActivity.this, "YOU ARE NOT ABLE TO SEARCH IN THIS CATEGORY", Toast.LENGTH_SHORT).show();
                     break;
                 }else {
                     /*

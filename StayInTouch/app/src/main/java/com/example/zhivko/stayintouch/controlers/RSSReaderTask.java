@@ -6,6 +6,7 @@ import android.os.AsyncTask;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import com.example.zhivko.stayintouch.NewsProvirdersActivity;
+import com.example.zhivko.stayintouch.R;
 import com.example.zhivko.stayintouch.fragments.NoNewsToShowFragment;
 import com.example.zhivko.stayintouch.model.News;
 import org.w3c.dom.Document;
@@ -29,9 +30,9 @@ import javax.xml.parsers.ParserConfigurationException;
  */
 public class RSSReaderTask extends AsyncTask<Void,Void,Void> {
 
-/*
-only top news
- */
+    /*
+    only top news
+     */
     public static final String WWW_SCIENCEMAG_ORG_RSS_NEWS_XML = "https://www.sciencemag.org/rss/news_current.xml";
 
 
@@ -149,8 +150,8 @@ only top news
         /*
         setting layout manager and adapter to recycler view
          */
-            recyclerView.setLayoutManager(new LinearLayoutManager(context));
-            recyclerView.setAdapter(myAdapter);
+        recyclerView.setLayoutManager(new LinearLayoutManager(context));
+        recyclerView.setAdapter(myAdapter);
 
     }
 
@@ -159,10 +160,10 @@ only top news
         processXml(getXmlData());
         return null;
     }
-/*
-    working with done xml document, deviate to items and find tags and their values
-    adding to collection that we will use for making the adapter
- */
+    /*
+        working with done xml document, deviate to items and find tags and their values
+        adding to collection that we will use for making the adapter
+     */
     private void processXml(Document xmlData) {
         newsFeed = new ArrayList<>();
         if(xmlData != null){
@@ -186,7 +187,17 @@ only top news
                                 item.setDescription(currentChild.getTextContent());
                             }else{
                                 if(currentChild.getNodeName().equalsIgnoreCase("pubdate")){
-                                    item.setPubDate(currentChild.getTextContent());
+                                    int counter =0 ;
+                                    StringBuilder stringBuilder = new StringBuilder();
+                                    for(int pozition = 0 ; pozition < currentChild.getTextContent().length(); pozition ++){
+                                        char simbol = currentChild.getTextContent().charAt(pozition);
+                                        if(simbol == ':')
+                                            counter ++;
+                                        if(counter == 2)
+                                            break;
+                                        stringBuilder.append(simbol);
+                                    }
+                                    item.setPubDate(stringBuilder.toString());
                                 }else{
                                     if(currentChild.getNodeName().equalsIgnoreCase("link")){
                                         item.setLink(currentChild.getTextContent());
@@ -246,7 +257,7 @@ only top news
         for (News news : newsFeed) {
             String description = "" ;
             if(news.getDescription() != null)
-                 description = news.getDescription().toLowerCase();
+                description = news.getDescription().toLowerCase();
             String title = news.getTitle().toLowerCase();
             if (description.contains(phrase.toLowerCase())|| title.contains(phrase.toLowerCase())) {
                 /*

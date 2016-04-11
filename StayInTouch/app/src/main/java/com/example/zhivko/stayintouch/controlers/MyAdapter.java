@@ -12,10 +12,13 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
+
 import com.daimajia.androidanimations.library.Techniques;
 import com.daimajia.androidanimations.library.YoYo;
-import com.example.zhivko.stayintouch.*;
+import com.example.zhivko.stayintouch.NewsDeatilsActivity;
+import com.example.zhivko.stayintouch.R;
 import com.example.zhivko.stayintouch.model.News;
+import com.example.zhivko.stayintouch.sqlLite.DBNewsDAO;
 import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
