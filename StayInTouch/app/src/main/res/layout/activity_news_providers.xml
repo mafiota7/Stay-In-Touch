@@ -6,10 +6,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
+    android:background="@drawable/news_portret"
     tools:openDrawer="start">
 
     <include
-        layout="@layout/app_bar_news_provirders"
+        layout="@layout/app_bar_news_providers"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 
@@ -19,7 +20,10 @@
         android:layout_height="match_parent"
         android:layout_gravity="start"
         android:fitsSystemWindows="true"
-        app:headerLayout="@layout/nav_header_news_provirders"
-        app:menu="@menu/activity_news_provirders_drawer" />
+        app:headerLayout="@layout/nav_header_news_providers"
+        app:menu="@menu/activity_news_provirders_drawer"
+        android:background="@drawable/side_nav_body"/>
+
+
 
 </android.support.v4.widget.DrawerLayout>

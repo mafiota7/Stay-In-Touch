@@ -1,36 +1,150 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <group android:checkableBehavior="single">
-        <item
-            android:id="@+id/nav_camera"
-            android:icon="@drawable/ic_menu_camera"
-            android:title="Import" />
-        <item
-            android:id="@+id/nav_gallery"
-            android:icon="@drawable/ic_menu_gallery"
-            android:title="Gallery" />
-        <item
-            android:id="@+id/nav_slideshow"
-            android:icon="@drawable/ic_menu_slideshow"
-            android:title="Slideshow" />
-        <item
-            android:id="@+id/nav_manage"
-            android:icon="@drawable/ic_menu_manage"
-            android:title="Tools" />
-    </group>
 
-    <item android:title="Communicate">
+    <item android:title="SEARCH">
         <menu>
             <item
-                android:id="@+id/nav_share"
-                android:icon="@drawable/ic_menu_share"
-                android:title="Share" />
-            <item
-                android:id="@+id/nav_send"
-                android:icon="@drawable/ic_menu_send"
-                android:title="Send" />
+                android:id="@+id/nav_search"
+                android:icon="@android:drawable/ic_menu_search"
+                android:title="Search news by word" />
         </menu>
     </item>
+
+    <item android:title="MY FAVORITE">
+        <menu>
+            <item
+                android:id="@+id/nav_my_favorite"
+                android:icon="@android:drawable/btn_star_big_on"
+                android:title="My favorite news" />
+        </menu>
+    </item>
+
+
+    <item android:title="CBS NEWS CATEGORIES">
+        <menu>
+            <item
+                android:id="@+id/nav_cbs_top_stories"
+                android:title="TOP STORIES" />
+            <item
+                android:id="@+id/nav_cbs_world"
+                android:title="WORLD" />
+            <item
+                android:id="@+id/nav_cbs_politics"
+                android:title="POLITICS" />
+            <item
+                android:id="@+id/nav_cbs_techology"
+                android:title="TECHNOLOGY" />
+            <item
+                android:id="@+id/nav_cbs_business"
+                android:title="BUSINESS" />
+        </menu>
+    </item>
+
+    <item android:title="BBC NEWS CATEGORIES">
+        <menu>
+            <item
+                android:id="@+id/nav_bbc_top_stories"
+                android:title="TOP STORIES" />
+            <item
+                android:id="@+id/nav_bbc_world"
+                android:title="WORLD" />
+            <item
+                android:id="@+id/nav_bbc_politics"
+                android:title="POLITICS" />
+            <item
+                android:id="@+id/nav_bbc_techology"
+                android:title="TECHNOLOGY" />
+            <item
+                android:id="@+id/nav_bbc_business"
+                android:title="BUSINESS" />
+        </menu>
+    </item>
+
+    <item android:title="FOX NEWS ">
+        <menu>
+            <item
+                android:id="@+id/nav_fox_top_stories"
+                android:title="TOP STORIES" />
+        </menu>
+    </item>
+
+    <item android:title="SKY NEWS CATEGORIES">
+        <menu>
+            <item
+                android:id="@+id/nav_sky_top_stories"
+                android:title="TOP STORIES" />
+            <item
+                android:id="@+id/nav_sky_world"
+                android:title="WORLD" />
+            <item
+                android:id="@+id/nav_sky_politics"
+                android:title="POLITICS" />
+            <item
+                android:id="@+id/nav_sky_techology"
+                android:title="TECHNOLOGY" />
+            <item
+                android:id="@+id/nav_sky_business"
+                android:title="BUSINESS" />
+        </menu>
+    </item>
+
+    <item android:title="SCIENCE AAAS">
+        <menu>
+            <item
+                android:id="@+id/nav_science_top_stories"
+                android:title="TOP STORIES" />
+        </menu>
+    </item>
+    <item android:title="COMPUTER WEEKLY">
+        <menu>
+            <item
+                android:id="@+id/nav_computer_weekly_top_stories"
+                android:title="TOP STORIES" />
+            <item
+                android:id="@+id/nav_computer_weekly_it_hardware_news"
+                android:title="IT HARDWARE NEWS" />
+            <item
+                android:id="@+id/nav_computer_weekly_enterprise_software_news"
+                android:title="ENTERPRISE SOFTWARE NEWS" />
+            <item
+                android:id="@+id/nav_computer_weekly_it_services_and_outsourcing"
+                android:title="IT SERVICES AND OUTSOURCING" />
+            <item
+                android:id="@+id/nav_computer_weekly_it_security"
+                android:title="IT SECURITY" />
+            <item
+                android:id="@+id/nav_computer_weekly_it_networking_and_communication"
+                android:title="IT NETWORKING" />
+            <item
+                android:id="@+id/nav_computer_weekly_mobile_technology"
+                android:title="MOBILE TECHNOLOGY" />
+            <item
+                android:id="@+id/nav_computer_weekly_internet_technology"
+                android:title="INTERNET TECHNOLOGY" />
+            <item
+                android:id="@+id/nav_computer_weekly_it_management"
+                android:title="IT MANAGEMENT" />
+            <item
+                android:id="@+id/nav_computer_weekly_it_careers_and_it_skills"
+                android:title="IT CAREERS AND IT SKILLS" />
+            <item
+                android:id="@+id/nav_computer_weekly_public_sector_it_news"
+                android:title="PUBLIC SECTOR IT NEWS" />
+            <item
+                android:id="@+id/nav_computer_weekly_financial_services_it_news"
+                android:title="FINANCIAL SERVICES IT NEWS" />
+        </menu>
+    </item>
+
+    <item android:title="">
+        <menu>
+            <item
+                android:id="@+id/nav_back"
+                android:icon="@android:drawable/ic_menu_revert"
+                android:title="Back" />
+        </menu>
+    </item>
+
 
 </menu>

@@ -89,7 +89,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(context, NewsDeatils.class);
+                Intent intent = new Intent(context, NewsDeatilsActivity.class);
                 intent.putExtra("link", news.getLink());
                 context.startActivity(intent);
 

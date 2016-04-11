@@ -1,0 +1,18 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.NoNewsToShowFragment"
+    android:background="@drawable/side_nav_body">
+
+
+    <Button
+        android:alpha="0.5"
+        android:layout_marginTop="50dp"
+        android:id="@+id/fragment_button_back_no_news"
+        android:text="BACK TO NEWS"
+        android:textStyle="bold|italic"
+        android:textSize="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

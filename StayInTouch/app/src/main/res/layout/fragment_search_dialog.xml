@@ -1,0 +1,48 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.SearchDialogFragment"
+    android:background="@drawable/side_nav_body">
+
+
+    <ScrollView
+        android:layout_marginTop="50dp"
+        android:id="@+id/dialog_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:text=""
+            android:id="@+id/fragment_edittext"
+            android:hint="YOUR TEXT ..."
+            android:gravity="center"
+            android:inputType="text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/dialog_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:alpha="0.5"
+            android:id="@+id/fragment_button_back"
+            android:text="BACK"
+            android:textStyle="bold|italic"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
+        <ImageButton
+            android:alpha="0.5"
+            android:id="@+id/fragment_button_search"
+            android:src="@android:drawable/ic_menu_search"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+</RelativeLayout>

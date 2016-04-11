@@ -5,25 +5,20 @@ import android.content.Context;
 import android.os.AsyncTask;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-
-import com.example.panche.rssreader.NewsProviders;
-import com.example.panche.rssreader.R;
-import com.example.panche.rssreader.fragments.NoNewsToShowFragment;
-import com.example.panche.rssreader.model.News;
-
+import com.example.zhivko.stayintouch.NewsProvirdersActivity;
+import com.example.zhivko.stayintouch.fragments.NoNewsToShowFragment;
+import com.example.zhivko.stayintouch.model.News;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 import org.xml.sax.SAXException;
-
 import java.io.IOException;
 import java.io.InputStream;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.ArrayList;
-
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
@@ -273,7 +268,7 @@ only top news
             /*
             else setting only title to search filter
              */
-            NewsProviders newsProviders = (NewsProviders) context;
+            NewsProvirdersActivity newsProviders = (NewsProvirdersActivity) context;
             newsProviders.getSupportActionBar().setTitle("SEARCH FILTER '" + phrase + "'");
         }
     }

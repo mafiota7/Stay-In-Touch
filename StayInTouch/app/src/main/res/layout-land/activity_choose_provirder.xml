@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/news_land"
+    tools:context="com.example.zhivko.stayintouch.ChooseProvirderActivity">
+
+
+    <HorizontalScrollView
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageButton
+                android:alpha="0.8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/button_cbs"
+                android:src="@drawable/cbs"/>
+            <ImageButton
+                android:alpha="0.8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/button_bbc"
+                android:src="@drawable/bbc"/>
+            <ImageButton
+                android:alpha="0.8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/button_fox"
+                android:src="@drawable/fox_news"/>
+            <ImageButton
+                android:alpha="0.8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/button_sky"
+                android:src="@drawable/sky_news"/>
+            <ImageButton
+                android:alpha="0.8"
+                android:src="@drawable/sciance_aaas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/button_science" />
+            <ImageButton
+                android:alpha="0.8"
+                android:src="@drawable/computer_weekly"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/button_computer" />
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+
+</RelativeLayout>
